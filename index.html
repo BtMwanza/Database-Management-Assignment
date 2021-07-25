@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rhythmhub</title>
+  <link rel="stylesheet" href="css/homestyle.css">
+
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo-box">
+      <!--<img src="images/Workgroup.png" alt="Logo">-->
+      <a href="index.html"><img src="images/Workgroup.png" alt="Logo"></a>
+    </div>
+    <div class="text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary-main">rhythmhub</span>
+        <span class="heading-primary-sub">is where it all starts</span>
+      </h1>
+        <a href="#" id="button" class="btn btn-white btn-animated">ENTER</a>
+    </div>
+  </div>
+
+
+  <!-- Pop-up Form -->
+ <div class="popup">
+    <div class="popup-content">
+      <div class="close"> + </div>
+      <h1 class="title">ENTER YOUR DETAILS</h1>
+      <form onsubmit="return validate()" action="sale.html" method="post">
+        <input type="text" id="employeeID" placeholder="Employee ID" class="input1">
+        <input type="text" id="password" placeholder="Password" class="input1">
+        <button class="botton" type="submit" name="button">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("button").addEventListener("click", function(){
+  document.querySelector(".popup").style.display = "flex";
+});
+
+document.querySelector(".close").addEventListener("click", function(){
+  document.querySelector(".popup").style.display = "none";
+});
+  </script>
+
+
+</body>
+<script src="js/dbscript.js"></script>
+</html>

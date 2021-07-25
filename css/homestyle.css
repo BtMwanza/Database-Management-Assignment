@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+@font-face {
+  font-family: customFont;
+  src: url(../font/Michelangelo.otf);
+}
+
+body{
+  background-color: white;
+  text-overflow: hidden;
+  font-family: customFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+
+}
+
+/*Header*/
+.navbar{
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(39, 174, 96, 0.5),
+    rgba(86, 101, 115, 0.5)),
+    url(../images/3.jpg);
+   background-size: cover;
+   background-position: top;
+   position: relative;
+}
+
+.logo-box{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo{
+  height: 35px;
+}
+
+.text-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary{
+  color: ghostwhite;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+}
+
+.heading-primary-main{
+  display: block;
+  font-size: calc(60px + 5vw);
+  font-weight: 400;
+  letter-spacing: 35px;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  /*animation-delay: 3s;*/
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 18.2px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+
+/* Animation */
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  80%{
+    transform: translate(10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translate(100px);
+  }
+  80%{
+    transform: translate(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.input1{
+  width: 60%;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: block;
+  position: relative;
+  margin: 20px auto;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #a93226;
+}
+
+.input1:active {
+  color: black;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #a93226;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white{
+  background-color: #fff;
+  color: #777;
+}
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+/* Pop-up form */
+.popup{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  top: 0;
+  opacity: 1;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.popup-content{
+  width: 40vw;
+  height: 50vh;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.close{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 24px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.botton{
+  background: #fff;
+  padding: 10px 15px;
+  color: #34495e;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+  margin-top: 5px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.botton:hover{
+  background-color: #34495e;
+  color: white;
+}
+
+.title{
+  font-family: "Lato", sans-serif;
+}

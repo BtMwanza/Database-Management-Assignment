@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+body{
+  background-color: white;
+  text-overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 60px;
+}
+
+/*Copy form*/
+.container {
+  max-width: 960px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-top-gray { border-top-color: #adb5bd; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-condensed { line-height: 1.25; }
+
+/*End copy*/
+input{
+  font-size: 20px;
+}
+
+.main{
+
+}
+
+/* Pop-up form */
+.popup{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  top: 0;
+  opacity: 1;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.popup-content{
+  width: 40vw;
+  height: 50vh;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.close{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 24px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.botton{
+  background: #fff;
+  padding: 10px 15px;
+  color: #34495e;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+  margin-top: 5px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.botton:hover{
+  background-color: #34495e;
+  color: white;
+}
+
+.title{
+  font-family: "Lato", sans-serif;
+}
